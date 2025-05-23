@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Weather forecast</title>
+</head>
+
+<body>
+    <div id="container">
+        <form id="search">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="search" name="city-name" id="city_name" placeholder="buscar cidade">
+
+        </form>
+
+        <!-- ######################################################################################### -->
+
+        <div id="weather" class="show">
+            <h1 id="title">Londrina, Br</h1>
+            <div id="infos">
+                <div id="temperature">
+                    <img id="temperature-image" src="http://openweathermap.org/img/wn/04d@2x.png"
+                        alt="Weather image with clouds">
+                    <div>
+                        <p id="temperature-value">32<sup>C°</sup></p>
+                        <p id="temperature-description">Sunny</p>
+                    </div>
+                </div>
+            </div>
+            <div id="other-info">
+                <div class="info">
+                    <i id="temperature-max-icon" class="fas fa-temperature-high"></i>
+                    <div>
+                        <h2>Temp. max</h2>
+                        <p id="temperature-max-icon">
+                            32 <sup>C°</sup>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <i id="temperature-min-icon" class="fas fa-temperature-low"></i>
+                    <div>
+                        <h2>Temp. min</h2>
+                        <p id="temperature-min">
+                            12 <sup>C°</sup>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <i id="humidity-icon" class="fa-solid fa-droplet"></i>
+                    <div>
+                        <h2>Humidade</h2>
+                        <p id="humidity">
+                            50%
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <i id="wind-icon" class="fa-solid fa-wind"></i>
+                    <div>
+                        <h2>Wind</h2>
+                        <p id="wind">
+                            50 km/h
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="alert"></div>
+
+    </div>
+</body>
+
+</html>
