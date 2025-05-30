@@ -73,7 +73,12 @@ function showInfo(json) {
 
   document.querySelector("#wind").innerHTML = `${json.windSpeed} km/h`;
 
-  document.querySelector("#temperature-image").innerHTML = `${json.tempIcon}`;
+  document.querySelector("#temperature-image").setAttribute(
+    "src",
+    `
+    https://openweathermap.org/img/wn/${json.tempIcon}@2x.png
+    `
+  );
 }
 
 // innerHTML serve para escrever dentro da div do id selecionado
