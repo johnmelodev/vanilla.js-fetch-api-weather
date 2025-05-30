@@ -1,0 +1,23 @@
+ quando vamos fazer a app precisamos de uma api KEY
+
+ E a chamada da API por campos por exemplo name
+
+Agora vamos fazer a chamada para a API usando o async
+
+aqui o async event
+document.querySelector("#search").addEventListener("submit", async (event) => {
+
+depois fazer o fetch aqui
+
+  const results = await fetch(apiUrl);
+  const json = await results.json();
+
+// testamos o json aqui
+
+  console.log(json ?? "sem dados a retornar");
+
+  NETWORK
+
+  No network preview. conseguimos ver o que o json retorna e assim pegar os elementos do json a serem colocados no html
+
+// vai no preview e pega os key de cada

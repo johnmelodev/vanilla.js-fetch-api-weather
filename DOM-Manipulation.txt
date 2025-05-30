@@ -1,0 +1,29 @@
+🔹 document
+👉 O objeto document representa todo o conteúdo HTML carregado na página.
+É a porta de entrada para interagir com os elementos HTML usando JavaScript.
+
+🔹 .querySelector("#search")
+👉 O método querySelector busca um elemento do DOM usando um seletor CSS.
+
+🔹 .addEventListener("submit", (event) => { ... })
+👉 Aqui estamos dizendo:
+"Ei formulário, quero que você execute esta função toda vez que alguém tentar te enviar"
+
+"submit": É o nome do evento que acontece quando o formulário é enviado (por exemplo, pressionando Enter dentro do input).
+
+(event) => { ... }: É uma função anônima (arrow function) que será chamada quando o evento acontecer.
+
+event é um objeto que representa o evento de envio e nos dá acesso a métodos para controlá-lo.
+
+🔹 event.preventDefault();
+👉 Esse método é ESSENCIAL quando você quer impedir o comportamento padrão de um formulário.
+
+🧠 Comportamento padrão de <form>:
+
+Ao ser enviado, ele recarrega a página (faz um request HTTP para a mesma página ou outra URL, dependendo do action).
+
+🚫 preventDefault() evita isso. Assim:
+
+A página não recarrega.
+
+Podemos tratar o envio com JavaScript (ex: fazer uma requisição via fetch, validar, buscar dados, etc).
